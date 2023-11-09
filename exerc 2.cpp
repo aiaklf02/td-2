@@ -21,13 +21,10 @@ int multiple3 (int nbr){
 int main ()
 {
 	int entier;
-	int A  ,B ;
 	cout<<"Donnez un entier :"<<endl;
 	cin>>entier;
-	A = multiple2(entier);
-	B = multiple3(entier);
-    
-	if (A==0 && B==0 )
+	
+	if (multiple2(entier)==0 && multiple3(entier)==0 )
     cout<<"il est divisble par 6."<<endl;
 	return 0;	
 }
