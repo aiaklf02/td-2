@@ -1,19 +1,15 @@
 #include<iostream>
 using namespace std;
-int i=0  ;
-void appel(){
-i++;
-cout<<"appel numero " <<i<<endl;
-	
+static int i=0  ;
+static void call(){
+i++;	
 }
 int main()
 {
-	int j , nbr ;
-	cout<<"combien de fois avez vous appelez la fonction ? "<<endl;
-	cin>>nbr;
-	for (j=0; j<nbr ; j++){
-		appel();
-	}
+	call();
+        call();
+	call();
+	cout<<"Appel numero:"<<i<<endl;	
 return 0;
 }
 
